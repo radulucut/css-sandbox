@@ -2,7 +2,7 @@
     --eye-size: 150px;
 }
 
-.eye .body-0 {
+#eye .body-0 {
     position: absolute;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -12,7 +12,7 @@
     transform: rotate(42deg);
 }
 
-.eye .body {
+#eye .body {
     border: 2px solid #000;
     width: var(--eye-size);
     height: var(--eye-size);
@@ -20,7 +20,7 @@
     transform: rotate(42deg);
 }
 
-.eye .iris {
+#eye .iris {
     width: 60%;
     height: 60%;
     margin: 20%;
@@ -28,7 +28,7 @@
     border-radius: 50%;
 }
 
-.eye .pupil {
+#eye .pupil {
     position: relative;
     width: 30%;
     height: 30%;
@@ -37,7 +37,7 @@
     border-radius: 50%;
 }
 
-.eye .light {
+#eye .light {
     position: absolute;
     top: 30%;
     width: 30%;

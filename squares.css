@@ -1,0 +1,44 @@
+#squares > div {
+    width: 10%;
+    height: 10%;
+    background: cornflowerblue;
+    animation: pulse 3s infinite;
+}
+
+#squares > div:nth-last-child(3n+0) {
+    animation-delay: .6s;
+}
+
+#squares > div:nth-last-child(7n+0) {
+    animation-delay: 1.2s
+}
+
+#squares > div:nth-last-child(11n+0) {
+    animation-delay: .9s
+}
+
+#squares > div:nth-last-child(13n+0) {
+    animation-delay: 1.5s
+}
+
+#squares > div:nth-last-child(17n+0) {
+    animation-delay: 2.5s
+}
+
+#squares > div:nth-last-child(19n+0) {
+    animation-delay: 1.8s
+}
+
+#squares > div:nth-last-child(23n+0) {
+    animation-delay: 2s
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

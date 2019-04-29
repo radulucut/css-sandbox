@@ -6,10 +6,37 @@ html, body {
     margin: 0;
 }
 
-.container  {
+.block-full,
+.block-half,
+.block-quarter  {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    flex-wrap: wrap;
     height: 400px;
+}
+
+.block-full {
+    width: 100%;
+}
+
+.block-half {
+    width: 50%;
+}
+
+.block-quarter {
+    width: 25%;
+}
+
+@media only screen and (max-width: 720px) {
+    .block-half,
+    .block-quarter {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1200px) {
+    .block-quarter {
+        width: 50%;
+    }
 }
