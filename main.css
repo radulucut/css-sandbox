@@ -1,6 +1,7 @@
 html, body {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     width: 100%;
     min-height: 100%;
     margin: 0;
