@@ -57,7 +57,7 @@ class Snow {
     createFlakes() {
         this.snowflakes = [];
 
-        for (let s = 0; s < this.container.clientWidth / 2; s++) {
+        for (let s = 0; s < this.container.clientWidth / 10; s++) {
             this.snowflakes.push(new Flake());
         }
     }

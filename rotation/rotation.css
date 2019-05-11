@@ -1,0 +1,73 @@
+#rotation .c-1,
+#rotation .c-2,
+#rotation .c-3 {
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#rotation .c-0 {
+    animation: rotation 8s infinite linear;
+}
+
+#rotation .c-1 {
+    animation: rotation-reverse 4s infinite linear;
+}
+
+#rotation .c-3 {
+    animation: rotation-reverse 2s infinite linear;
+}
+
+#rotation .c-0 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+#rotation .c-1,
+#rotation .c-2 {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background: #fff;
+}
+
+#rotation .c-1:nth-child(1) {
+    top: 37.5%;
+    left: -25%;
+}
+
+#rotation .c-2:nth-child(1) {
+    top: 37.5%;
+    left: calc(-25% - 4px);
+}
+
+#rotation .c-1:nth-of-type(2) {
+    top: 37.5%;
+    left: 100%;
+}
+
+#rotation .c-2:nth-child(2) {
+    top: 37.5%;
+    left: calc(100% + 4px);
+}
+
+#rotation .c-3 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    right: 25%;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation-reverse {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
