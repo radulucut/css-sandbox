@@ -41,3 +41,7 @@ html, body {
         width: 50%;
     }
 }
+
+:root {
+    --primary-color: #494949;
+}

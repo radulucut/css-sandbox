@@ -1,7 +1,7 @@
 #squares > div {
     width: 10%;
     height: 10%;
-    background: cornflowerblue;
+    background: var(--primary-color);
     animation: pulse 3s infinite;
 }
 

@@ -1,7 +1,7 @@
 #rotation .c-1,
 #rotation .c-2,
 #rotation .c-3 {
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -29,7 +29,6 @@
     position: absolute;
     width: 25%;
     height: 25%;
-    background: #fff;
 }
 
 #rotation .c-1:nth-child(1) {
