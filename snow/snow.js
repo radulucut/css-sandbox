@@ -67,7 +67,7 @@ class Snow {
         for (const flake of this.snowflakes) {
             flake.update();
             this.ctx.save();
-            this.ctx.fillStyle = '#fff';
+            this.ctx.fillStyle = '#494949';
             this.ctx.beginPath();
             this.ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
             this.ctx.closePath();
