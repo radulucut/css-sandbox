@@ -1,0 +1,58 @@
+#cradle .circle {
+    height: 30px;
+    width: 30px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+#cradle .string-left, .string-right {
+    height: 90px;
+    display: flex;
+    flex-direction: column-reverse;
+    transform-origin: top;
+    margin-bottom: 60px;
+}
+
+#cradle .string-left {
+    animation: rotate-left 1.6s infinite linear;
+}
+
+#cradle .string-right {
+    animation: rotate-right 1.6s infinite linear 0.8s;
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(70deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-70deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
